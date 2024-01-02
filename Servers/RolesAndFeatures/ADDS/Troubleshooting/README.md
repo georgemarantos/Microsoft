@@ -15,9 +15,9 @@ Run the following PowerShell command to view the current FSMO role holders.
 ```Netdom query fsmo```
 
 # Time Synchronization Issues:
-Time discrepancies between domain controllers and clients can lead to authentication failures. Run the following PowerShell command to view the current time configuration and status. 
+Run the following PowerShell command to view the current time configuration and status. 
 ```W32tm /query /status```
-Also review [Time Synchronization](https://github.com/georgemarantos/Windows/tree/main/Servers/RolesAndFeatures/ADDS/Time-Time-Synchronization.md)
+Also read the following [Time Synchronization](https://github.com/georgemarantos/Windows/blob/main/Servers/RolesAndFeatures/ADDS/Time-Synchronization.md) for more information about how time discrepancies between domain controllers and clients can lead to authentication failures. 
 
 # Security Group Membership List:
 Replace "GroupName" of the fo PowerShell with the name of the desired group view its members.
