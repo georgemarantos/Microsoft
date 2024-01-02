@@ -9,10 +9,6 @@ Run the following PowerShell command to check the configuration of the DNS serve
 
 # Verify DNS Forwarders Configuration:
 Run the following PowerShell command to checks the configuration of the DNS server for any misconfigurations.
-```Get-DnsServer | Format-List *```
-
-# Get-DnsServerForwarder:
-Run the following PowerShell command to ensures that DNS forwarders are correctly configured and operational. 
 ```Get-DnsServerForwarder```
 
 # Examine DNS Zones for Issues:
@@ -24,7 +20,7 @@ Run the following PowerShell command for diagnostics specifically for DNS on the
 ```dcdiag /test:dns /dnsrecordregistration```
 
 # Check AD DS SRV Records:
-Replace "DomainName" of the PowerShell script command to verify the SRV records needed for AD DS operations. (Not working as I want, check and update)
+Replace <DomainName> of the PowerShell script command to verify the SRV records needed for AD DS operations. (Not working as I want, check and update)
 ```nslookup```
 ```set type=srv```
 ```_ldap._tcp.dc._msdcs.<DomainName>```

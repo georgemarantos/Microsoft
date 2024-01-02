@@ -24,5 +24,5 @@ Replace "GroupName" of the fo PowerShell with the name of the desired group view
 ```Get-ADGroupMember -Identity "GroupName"```
 
 # Analyzing Group Policy processing times:
-Replace "DomainControllerName" of the PowerShell script and then run to see total login time. (Note, currently not working.)
+Replace "<DomainControllerName> of the PowerShell script and then run to see total login time. (Note, currently not working.)
 ```Get-WinEvent -ComputerName <DomainControllerName> -LogName 'Microsoft-Windows-GroupPolicy/Operational' | Where-Object { $_.Message -match "Total time" }```
