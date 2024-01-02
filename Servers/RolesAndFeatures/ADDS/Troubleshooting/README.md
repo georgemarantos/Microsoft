@@ -10,13 +10,14 @@ Run the following PowerShell command to get a list of all accounts that are curr
 # Failed User Authentications:
 Run the following PowerShell command to view the last 10 failed login attempts.```Get-WinEvent -FilterHashtable @{LogName='Security';Id=4625} -MaxEvents 10```
 
-# Analyzing Group Policy processing times:
+# Check FSMO Role Holders:
 Run the following PowerShell command to view the current FSMO role holders. 
 ```Netdom query fsmo```
 
 # Time Synchronization Issues:
-Time discrepancies between domain controllers and clients can lead to authentication failures. Run the following PowerShell command to view the current time configuration and status.
+Time discrepancies between domain controllers and clients can lead to authentication failures. Run the following PowerShell command to view the current time configuration and status. 
 ```W32tm /query /status```
+Also review [Time Synchronization](https://github.com/georgemarantos/Windows/tree/main/Servers/RolesAndFeatures/ADDS/Time-Time-Synchronization.md)
 
 # Security Group Membership List:
 Replace "GroupName" of the fo PowerShell with the name of the desired group view its members.
