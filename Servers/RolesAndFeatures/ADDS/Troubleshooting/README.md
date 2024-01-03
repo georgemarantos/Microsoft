@@ -12,7 +12,8 @@ Search-ADAccount -LockedOut
 ```
 
 # Failed User Authentications:
-Run the following PowerShell command to view the last 10 failed login attempts.```
+Run the following PowerShell command to view the last 10 failed login attempts.
+```
 Get-WinEvent -FilterHashtable @{LogName='Security';Id=4625} -MaxEvents 10
 ```
 
@@ -27,7 +28,8 @@ Run the following PowerShell command to view the current time configuration and 
 ```
 W32tm /query /status
 ```
-Also read the following [Time Synchronization](https://github.com/georgemarantos/Windows/blob/main/Servers/RolesAndFeatures/ADDS/Time-Synchronization.md) for more information about how time discrepancies between domain controllers and clients can lead to authentication failures. 
+
+Also read the following [Time Synchronization](https://github.com/georgemarantos/Windows/blob/main/Servers/RolesAndFeatures/ADDS/Time-Synchronization.md) article for more information about how time discrepancies between domain controllers and clients can lead to authentication failures. 
 
 # Security Group Membership List:
 Replace "GroupName" of the fo PowerShell with the name of the desired group view its members.
