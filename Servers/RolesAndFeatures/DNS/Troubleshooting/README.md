@@ -31,6 +31,8 @@ dcdiag /test:dns /dnsrecordregistration
 
 # Check AD DS SRV Records:
 Replace <DomainName> of the PowerShell script command to verify the SRV records needed for AD DS operations. (Not working as I want, check and update)
-```nslookup```
-```set type=srv```
-```_ldap._tcp.dc._msdcs.<DomainName>```
+```
+nslookup
+set type=srv
+_ldap._tcp.dc._msdcs.<DomainName>
+```
