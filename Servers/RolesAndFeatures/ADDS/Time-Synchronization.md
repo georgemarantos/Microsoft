@@ -23,6 +23,38 @@ Time synchronization is a critical aspect of Active Directory Domain Services (A
 4. Security Considerations:
    - Secure your NTP traffic to prevent man-in-the-middle attacks that could manipulate time synchronization.
 
+# Troubleshooting:
+Checks if the Windows Time service is running on the client.
+```
+sc query w32time
+```
+
+Restarts the Windows Time service, which can resolve temporary issues.
+```
+net stop w32time && net start w32time
+```
+
+Reconfigure Client to Use NTP
+```
+w32tm /config /syncfromflags:domhier /update
+```
+
+Check Client Time Configuration
+```
+w32tm /query /configuration
+```
+
+Replace <PDC_Name> with the actual PDC name to check the time configuration of the PDC.
+```
+w32tm /query /status /computer:<PDC_Name>
+```
+
+Resets the time service configuration, which can resolve issues caused by incorrect settings.
+```
+w32tm /unregister
+w32tm /register
+```
+
 # Final Thoughts:
 The PDC emulator should not be pointing to the CMOS or time drift will likely occur at some point and cause severe issues with users and servers on the network. Having the PDC point to a reliable external time source such as pool.ntp.org and the clients syncing to the domain controler should be the best configuration. I achieve this by running the following command on the PDC: 
 ```
