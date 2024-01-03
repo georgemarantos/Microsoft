@@ -1,6 +1,6 @@
-## Generic Troubleshooting
+# Generic Troubleshooting
 
-# Welcome
+## Welcome
 
 - **[Active Directory Issues](https://github.com/georgemarantos/Windows/tree/main/Servers/RolesAndFeatures/ADDS/)**
 - **[Group Policy Problems](https://github.com/georgemarantos/Windows/tree/main/Servers/RolesAndFeatures/ADDS/Troubleshooting/Group-Policy/)**

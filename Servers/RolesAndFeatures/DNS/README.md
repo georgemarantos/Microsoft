@@ -1,8 +1,8 @@
-## DNS
-# Overview
+# DNS
+## Overview
 Domain Name System (DNS) plays a pivotal role in Active Directory Domain Services (AD DS). It is essential for locating Active Directory domain controllers and services, enabling computers and users within an AD DS environment to find each other and communicate efficiently.
 
-# How It Functions:
+## How It Functions:
 1. <b>Service Location:</b>
    - DNS is used in AD DS to locate services like domain controllers, global catalog servers, and other essential AD DS services.
    - AD DS relies on DNS service records (SRV records) to facilitate the location of these services.
@@ -11,7 +11,7 @@ Domain Name System (DNS) plays a pivotal role in Active Directory Domain Service
 3. <b>Dynamic DNS Updates:</b>
    - AD DS supports dynamic update of DNS records, allowing domain controllers and other AD DS resources to automatically register and update their DNS records as needed.
 
-# Best Practices:
+## Best Practices:
 1. <b>Integrate DNS with AD DS:</b>
    - Where possible, use Active Directory-integrated DNS zones to leverage AD DS for DNS data replication and security
 2. <b>Secure DNS Zones:</b>
@@ -22,5 +22,5 @@ Domain Name System (DNS) plays a pivotal role in Active Directory Domain Service
 4. <b>DNS Forwarders and Conditional Forwarders:
    - Use DNS forwarders and conditional forwarders to manage and optimize external DNS traffic.
 
-# Things to Research:
+## Things to Research:
 DNSSEC

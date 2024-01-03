@@ -1,8 +1,8 @@
-## DHCP
-# Overview
+# DHCP
+## Overview
 Dynamic Host Configuration Protocol (DHCP) is a network management protocol used on Internet Protocol (IP) networks. In a Windows Server environment, the DHCP role is crucial for automatically assigning IP addresses and other network configuration parameters to devices on the network, thereby reducing the need for a network administrator to manually assign IP addresses to all networked devices.
 
-# How It Functions:
+## How It Functions:
 1. <b>IP Address Allocation:</b>
    - DHCP servers assign IP addresses to clients for a set lease period. This allocation can be dynamic (changing each time a device connects to the network) or reserved (permanently assigning a specific IP address to a particular device).
    - AD DS relies on DNS service records (SRV records) to facilitate the location of these services.
@@ -13,7 +13,7 @@ Dynamic Host Configuration Protocol (DHCP) is a network management protocol used
 4. <b>Renewal and Rebinding:</b>
    - DHCP clients attempt to renew their lease as it nears expiration. If the original DHCP server is unreachable during renewal, clients try rebinding with any available DHCP server to maintain network connectivity.
 
-# Best Practices:
+## Best Practices:
 1. <b>High Availability:</b>
    - Implement DHCP failover or clustering to ensure continuous network service availability.
 2. <b>Secure DHCP Configuration:</b>
