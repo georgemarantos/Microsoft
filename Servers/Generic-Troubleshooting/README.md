@@ -2,7 +2,7 @@
 
 ## Welcome
 
-- **[Active Directory Issues](https://github.com/georgemarantos/Windows/tree/main/Servers/RolesAndFeatures/ADDS/)**
+- **[Active Directory Issues](https://github.com/georgemarantos/Windows/blob/main/Servers/RolesAndFeatures/ADDS/Troubleshooting/)**
 - **[Group Policy Problems](https://github.com/georgemarantos/Windows/tree/main/Servers/RolesAndFeatures/ADDS/Troubleshooting/Group-Policy/)**
 - **[Windows Updates and Patch Management](https://github.com/georgemarantos/Windows/blob/main/Servers/Generic-Troubleshooting/Windows-Updates.md)**
 - **[Network Connectivity Issues](https://github.com/georgemarantos/Windows/blob/main/Servers/Generic-Troubleshooting/Network-Issues.md)**
