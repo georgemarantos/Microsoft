@@ -1,21 +1,21 @@
-## Active Directory Domain Services Troubleshooting
+## Network Connectivity Troubleshooting
 
-# Verify Domain Controller Health
-Run the following PowerShell command to check the health of the domain controllers.
+# Advanced Ping Diagnostics
+Continuously ping with a specific packet size to diagnose MTU issues or intermittent packet loss.
 ```
-dcdiag /v
-```
-
-# Replication Issues:
-AD DS replication issues occur when domain controllers fail to replicate data amongst each other, leading to inconsistent data across the network. Run the following PowerShell command to get a summary of replication status across all domain controllers.
-```
-repadmin /replsummary
+ping -t -l 1400 <DestinationIP>
 ```
 
-# Account Lockouts:
-Run the following PowerShell command to get a list of all accounts that are currently locked out.
+# Examine Network Interface Performance:
+View detailed statistics for network adapters, including errors and discards.
 ```
-Search-ADAccount -LockedOut
+Get-NetAdapterStatistics
+```
+
+# Use Netstat for Port and Connection Analysis:
+View active connections and listening ports to identify unexpected connections or traffic.
+```
+netstat -ano
 ```
 
 # Failed User Authentications:
