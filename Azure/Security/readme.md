@@ -16,14 +16,14 @@ Azure Security refers to the collective measures, tools, and practices in place 
 
 ## Best Practices:
 1. Implement Strong Identity and Access Management:
-  - Regularly review and enforce least privilege access using Azure AD and RBAC.
+   - Regularly review and enforce least privilege access using Azure AD and RBAC.
 2. Secure Your Network:
-  - Use NSGs, Azure Firewall, and Network Virtual Appliances (NVAs) for network segmentation and protection.
+   - Use NSGs, Azure Firewall, and Network Virtual Appliances (NVAs) for network segmentation and protection.
 3. Enable Advanced Threat Protection:
-  - Utilize Azure Security Center’s advanced threat protection capabilities for real-time threat detection and response.
+   - Utilize Azure Security Center’s advanced threat protection capabilities for real-time threat detection and response.
 4. Encrypt Sensitive Data:
-  - Apply Azure’s encryption features for data at rest and in transit, and manage encryption keys with Azure Key Vault.
+   - Apply Azure’s encryption features for data at rest and in transit, and manage encryption keys with Azure Key Vault.
 5. Monitor and Log Activity:
-  - Enable Azure Monitor and Azure Log Analytics to collect, analyze, and act on telemetry data from your Azure and on-premises environments.
+   - Enable Azure Monitor and Azure Log Analytics to collect, analyze, and act on telemetry data from your Azure and on-premises environments.
 6. Regularly Assess and Remediate Vulnerabilities:
-  - Conduct frequent security assessments using Azure Security Center and remediate identified vulnerabilities.
+   - Conduct frequent security assessments using Azure Security Center and remediate identified vulnerabilities.
