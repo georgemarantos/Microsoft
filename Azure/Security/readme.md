@@ -6,13 +6,13 @@ The following are notes taken as I prepared for my Microsoft certification as we
 Azure Security refers to the collective measures, tools, and practices in place to protect Azure-based applications, data, and infrastructure from cyber threats. As a major component of the Microsoft Azure Cloud platform, Azure Security is crucial for maintaining the integrity, confidentiality, and availability of cloud resources.
 
 ## Key Components:
-- **[Azure Active Directory (Azure AD)](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Compute/)**
-- **[Azure Firewall](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Storage/)**
-- **[Azure Security Center](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Database/)**
-- **[Azure Information Protection](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Networking/)**
-- **[Azure Network Security Groups (NSGs)](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Analytics/)**
-- **[Azure Key Vault](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Analytics/)**
-- **[Virtual Network (VNet) Service Endpoints:](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Analytics/)**
+- **[Azure Active Directory (Azure AD)](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Security/AzureAD)**
+- **[Azure Firewall](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Security/Firewall)**
+- **[Azure Security Center](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Security/Security-Center)**
+- **[Azure Information Protection](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Security/AIP)**
+- **[Azure Network Security Groups (NSGs)](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Security/NSG)**
+- **[Azure Key Vault](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Security/Key-Vault)**
+- **[Virtual Network (VNet) Service Endpoints:](https://github.com/georgemarantos/Microsoft/tree/main/Azure/Security/Service-Enpoints)**
 
 ## Best Practices:
 1. Implement Strong Identity and Access Management:
