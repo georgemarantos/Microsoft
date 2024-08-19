@@ -9,7 +9,7 @@ $customer = "xxx"
 # Set Networking Variables
 $vnet = "vnet-gmarantos-sandbox-eastus2"
 $subnet = "default"
-$vnetResourceGroup = "rg-gmarantos-development-eastus2"
+$privateEndpointResourceGroup = "rg-gmarantos-development-eastus2"
 
 # Check if Subscription ID is set
 if (-not $subscriptionId) {

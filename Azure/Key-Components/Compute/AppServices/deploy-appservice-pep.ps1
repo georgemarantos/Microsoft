@@ -9,14 +9,6 @@ Write-Host "Region: $region"
 Write-Host "App Version: $appver"
 Write-Host "Customer: $customer"
 
-# Check if variables are set
-if (-not $tenantId) { Write-Error "tenantId is not set." }
-if (-not $appname) { Write-Error "appname is not set." }
-if (-not $securezone) { Write-Error "securezone is not set." }
-if (-not $region) { Write-Error "region is not set." }
-if (-not $appver) { Write-Error "appver is not set." }
-if (-not $customer) { Write-Error "customer is not set." }
-
 # Set App Variables
 $resourceGroupName = "rg-$appname-$securezone-$customer-$region-$appver"
 $appServicePlanName = "asp-$appname-$securezone-$customer-$region-$appver"
