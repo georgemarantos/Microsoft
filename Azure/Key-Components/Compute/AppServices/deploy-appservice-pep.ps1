@@ -1,14 +1,6 @@
 # Import variables from app-variables.ps1
 . ./app-variables.ps1
 
-# Debug: Print out the imported variables
-Write-Host "Tenant ID: $tenantId"
-Write-Host "App Name: $appname"
-Write-Host "Secure Zone: $securezone"
-Write-Host "Region: $region"
-Write-Host "App Version: $appver"
-Write-Host "Customer: $customer"
-
 # Set App Variables
 $resourceGroupName = "rg-$appname-$securezone-$customer-$region-$appver"
 $appServicePlanName = "asp-$appname-$securezone-$customer-$region-$appver"
@@ -19,12 +11,6 @@ $virtualNetwork = Get-AzVirtualNetwork -ResourceGroupName $privateEndpointResour
 $subnetId = $virtualNetwork.Subnets | Where-Object { $_.Name -eq $subnet }
 $privateEndpointName = "pep-$appname-$securezone-$customer-$region-$appver"
 
-# Debug: Print out the imported variables
-Write-Host "Resource Group Name: $resourceGroupName"
-Write-Host "App Service Plan: $appServicePlanName"
-Write-Host "App Service Name: $appServiceName"
-Write-Host "Private Endpoint: $privateEndpointName"
-
 # Check if the resource group exists
 $resourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
 if (-not $resourceGroup) {
@@ -33,19 +19,21 @@ if (-not $resourceGroup) {
 }
 
 # Create the App Service Plan
+Write-Host "App Service Plan: $appServicePlanName"
 try {
     $appServicePlan = New-AzAppServicePlan -Name $appServicePlanName `
                                            -ResourceGroupName $resourceGroupName `
                                            -Location $region `
-                                           -Tier "Basic" `
-                                           -NumberofWorkers 1 `
-                                           -WorkerSize "Small"
+                                           -Tier $Tier `
+                                           -NumberofWorkers $NumberofWorkers `
+                                           -WorkerSize $WorkerSize
 } catch {
     Write-Error "Failed to create App Service Plan: $_"
     exit
 }
 
 # Create the App Service
+Write-Host "App Service: $appServiceName"
 try {
     $appService = New-AzWebApp -Name $appServiceName `
                                -ResourceGroupName $resourceGroupName `

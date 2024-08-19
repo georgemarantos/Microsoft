@@ -6,6 +6,11 @@ $region = "eastus2"
 $appver = "01"
 $customer = "xxx"
 
+# Set Resource Variables
+$Tier = "Basic"
+$NumberofWorkers = "1" 
+$WorkerSize = "Small"
+
 # Set Networking Variables
 $vnet = "vnet-gmarantos-sandbox-eastus2"
 $subnet = "default"
