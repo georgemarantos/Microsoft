@@ -30,6 +30,7 @@ if (-not $resourceGroup) {
 $groupDn = (Get-AzADGroup -DisplayName "Cloud DBAdmins").DisplayName
 
 # Create the SQL Server
+Write-Host "Creating Azure SQL Server: $sqlServerName"
 New-AzSqlServer -ResourceGroupName $resourceGroupName -ExternalAdminName $groupDn `
     -ServerName $sqlServerName `
     -Location $region `
