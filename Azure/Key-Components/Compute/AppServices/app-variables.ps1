@@ -1,5 +1,4 @@
 # Set Application Variables
-$tenantId = "xxx"
 $appname = "gmarantos"
 $securezone = "development"
 $region = "eastus2"

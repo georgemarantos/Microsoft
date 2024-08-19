@@ -1,10 +1,9 @@
 # Set Application Variables
-$tenantId = "8c5159a3-000c-43d6-94cb-c1a845fb7b9c"
 $appname = "gmarantos"
 $securezone = "development"
 $region = "eastus2"
 $appver = "01"
-$customer = "dmtn"
+$customer = "xxxx"
 
 # Set Resource Variables
 $sku = "Standard"

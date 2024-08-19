@@ -1,10 +1,12 @@
 # Set Application Variables
-$tenantId = "xxxxxx"
 $appname = "gmarantos"
 $securezone = "development"
 $region = "eastus2"
 $appver = "01"
 $customer = "xxx"
+
+# Set Resource Variables
+$BackupStorageRedundancy = "Local"
 
 # Set Networking Variables
 $vnet = "vnet-gmarantos-sandbox-eastus2"
