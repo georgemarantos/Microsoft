@@ -56,7 +56,7 @@ w32tm /register
 ```
 
 ## Final Thoughts:
-The PDC emulator should not be pointing to the CMOS or time drift will likely occur at some point and cause severe issues with users and servers on the network. Having the PDC point to a reliable external time source such as pool.ntp.org and the clients syncing to the domain controler should be the best configuration. I achieve this by running the following command on the PDC: 
+The PDC emulator should not be pointing to the CMOS or time drift will likely occur at some point and cause severe issues with users and servers on the network. Having the PDC point to a reliable external time source such as pool.ntp.org and the clients syncing to the domain controller should be the best configuration. I achieve this by running the following command on the PDC: 
 ```
 w32tm /config /syncfromflags:manual /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org"
 ```
