@@ -1,3 +1,4 @@
+# This script will deploy an App Service and App Service plan and a private endpoint at once.
 # Import variables from app-variables.ps1
 . ./00-app-variables.ps1
 
