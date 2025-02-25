@@ -1,4 +1,5 @@
-# This script will deploy an App Service and App Service plan with default inbound public network access.
+# This script will deploy an App Service and App Service plan with default inbound public network access. 
+# No modification needs to be done to this script as everything is managed from 00-app-variable.ps1 file.
 # Import variables from app-variables.ps1
 . ./00-app-variables.ps1
 
