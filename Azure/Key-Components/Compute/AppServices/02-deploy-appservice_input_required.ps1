@@ -1,3 +1,5 @@
+# No modification needs to be done to this script as you will be prompted to enter all the information needed to build an app service and app service plan.
+
 $region = "eastus2"
 
 # Set Application Naming Variables
