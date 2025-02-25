@@ -5,16 +5,16 @@ if (-not $appname) {
     $appname = Read-Host -Prompt "Enter Application Name"
 }
 if (-not $securezone) {
-    $securezone = Read-Host -Prompt "Enter either sec, idmz, or office"
+    $securezone = Read-Host -Prompt "Enter security zone such as: sec, idmz, or office"
 }
 if (-not $region) {
     $region = Read-Host -Prompt "This should default to eastus2"
 }
 if (-not $appver) {
-    $appver = Read-Host -Prompt "Enter version of the application, as in 01,02, or 03"
+    $appver = Read-Host -Prompt "Enter version of the application, as in 01, 02, or 03"
 }
 if (-not $customer) {
-    $customer = Read-Host -Prompt "Enter Customer or affiliate, as in DMTN, DMAT, DMNC"
+    $customer = Read-Host -Prompt "Enter customer or affiliate name"
 }
 $resourceGroupName = "rg-$appname-$securezone-$customer-$region-$appver"
 $appServicePlanName = "asp-$appname-$securezone-$customer-$region-$appver"
