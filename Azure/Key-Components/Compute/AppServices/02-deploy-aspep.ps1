@@ -1,5 +1,6 @@
+# This script will deploy an private endpoint to an already deployed app service.
 # Import variables from app-variables.ps1
-. ./app-variables.ps1
+. ./00-app-variables.ps1
 
 # Set App Variables
 $resourceGroupName = "rg-$appname-$securezone-$customer-$region-$appver"
