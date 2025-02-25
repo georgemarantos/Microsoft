@@ -1,4 +1,5 @@
 # This is optional step and only needed to be run if you need to add private endpoint to an already deployed app service. 
+# No modification needs to be done to this script as everything is managed from 00-app-variable.ps1 file.
 # Import variables from app-variables.ps1
 . ./00-app-variables.ps1
 
