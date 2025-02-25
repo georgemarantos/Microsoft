@@ -1,5 +1,6 @@
+# This script will deploy an App Service and App Service plan with default inbound public network access.
 # Import variables from app-variables.ps1
-. ./app-variables.ps1
+. ./00-app-variables.ps1
 
 # Set Variables
 $resourceGroupName = "rg-$appname-$securezone-$customer-$region-$appver"
@@ -19,9 +20,9 @@ try {
     $appServicePlan = New-AzAppServicePlan -Name $appServicePlanName `
                                            -ResourceGroupName $resourceGroupName `
                                            -Location $region `
-                                           -Tier $Tier `
-                                           -NumberofWorkers $NumberofWorkers `
-                                           -WorkerSize $WorkerSize
+                                           -Tier $tier `
+                                           -NumberofWorkers $workers `
+                                           -WorkerSize $size
 } catch {
     Write-Error "Failed to create App Service Plan: $_"
     exit
